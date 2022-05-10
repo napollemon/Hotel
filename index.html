@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="flex">
+            <img class="header-logo" src="img/logo.svg" alt="logo">
+        </div>
+        <div class="flex">
+            <nav>
+                <ul class="header-nav flex">
+                    <li><a href="">Our Hotel</a></li>
+                    <li><a href="">Rooms & Rates</a></li>
+                    <li><a href="">Facilities</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img class="header-image-search" src="img/search.svg" alt="search">
+        </div>   
+    </header>
+    <form class="booking flex" action="#">
+        <select class="booking-select" name="Select-City">
+            <option value="Select a City">Select a City</option>
+            <option value="Poltava">Poltava</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+        </select>
+        <input class="booking-calendar" type="text" placeholder="Check In" size="14" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input class="booking-calendar" type="text" placeholder="Check Out" size="14" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <button class="booking-btn button flex" type="submit">Check Availability</button>
+    </form>
+    <section class="title title-wrapper flex">
+        <h1>WELCOME TO BON HOTEL</h1>
+        <span>Good people. Good thinking. Good feeling.</span>
+        <div class="title-button button">EXPLORE</div>
+    </section>
+    <aside class="aside flex">
+            <h2 class="aside-text">Facilities</h2>
+            <div class="aside-nav flex">
+                <div class="aside-nav-item flex">
+                    <img src="img/kitchen.svg" alt="kitchen">
+                    <span>Kitchen</span>
+                </div>
+                <div class="aside-nav-item flex">
+                    <img src="img/pool.svg" alt="Pool">
+                    <span>Pool</span>
+                </div>
+                <div class="aside-nav-item flex">
+                    <img src="img/wifi.svg" alt="Wifi">
+                    <span>Wifi</span>
+                </div>
+                <div class="aside-nav-item flex">
+                    <img src="img/gym.svg" alt="Gym">
+                    <span>Gym</span>
+                </div>
+                <div class="aside-nav-item flex">
+                    <img src="img/taxi.svg" alt="Taxi">
+                    <span>Taxi</span>
+                </div>
+            </div>
+    </aside>
+    <main class="main main-position flex">
+        <div class="main-text aside-text">Rooms & Rates</div>
+        <div class="main-nav flex">
+            <div class="main-nav-rooms main-nav-rooms-01 flex main">
+                <span>Standard Twin Room</span>
+                <div class="main-button button">Check Rates</div>
+            </div>
+            <div class="main-nav-rooms main-nav-rooms-02 flex main">
+                <span class="main-text-standartroom">Standard Room</span>
+                <div class="main-button button main-button-standartroom">Check Rates</div>
+            </div>
+            <div class="main-nav-rooms main-nav-rooms-03 flex main">
+                <span>Standard View Room</span>
+                <div class="main-button button main-button-viewroom">Check Rates</div>
+            </div>
+            <div class="main-nav-rooms main-nav-rooms-04 flex main">
+                <span class="main-text-deluxroom">Deluxe Room</span>
+                <div class="main-button button main-button-deluxroom">Check Rates</div>
+            </div>
+        </div>
+        <div class="main flex">
+            <div class="main-text-bottom aside-text">Get a room already!</div>
+            <div class="main-button button main-button-end">Book Now</div>
+        </div>
+    </main>
+    <footer class="footer footer-wrapper">
+            <div class="footer-left">
+                <img src="img/footer-logo01.png" alt="footer-logo">
+                <div class="footer-left-text">
+                    <span class="footer-left-text-01">Bon Hotels Head Office</span>
+                    <span>+27 434 344 432</span>
+                    <span>info@bonhotels.com</span>
+                </div>
+            </div>
+            <div class="footer-centr">
+                <span>Our Hotels</span>
+                <span>Our Conferencing</span>
+                <span>Our Company</span>
+                <span>Hotel Design</span>
+                <span>Careers</span>
+            </div>
+            <div class="footer-right">
+                <span>Subcribe for Offers</span>
+                <form class="email" action="#">
+                    <input type="email" name="EmailAddress" placeholder="Email Address">
+                    <button type="submit">Subcribe  Now</button>
+                </form>
+            </div>
+    </footer>
+</body>
+</html>
