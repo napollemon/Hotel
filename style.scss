@@ -1,0 +1,340 @@
+$white: #fff;
+$peach: #DFAA5B;
+$dark: #111111;
+$brown: #957554;
+$light: rgba(0,0,0, .5);
+
+$text-Ubuntu: 'Ubuntu', sans-serif;
+
+body {
+    max-width: 1441px;
+    font-family: $text-Ubuntu;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header {
+    background-color: $white;
+    &-logo {
+        margin-top: 34px;
+        margin-bottom: 48px;
+    }
+    &-nav {
+        list-style-type: none;
+        margin: 0 0 30px 0;
+        padding: 0 41px 0 0;
+        gap: 49px;
+        & li {
+            padding-right: 1px;
+        }
+        & a {
+            text-decoration: none;
+            color: $brown;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+    &-image-search {
+        margin-bottom: 30px;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+}
+.booking {
+    background-color: $dark;
+    padding: 27px 303px 32px 321px;
+    gap: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    &-select {
+        padding: 19px 60px 18px 17px;
+        border: none;
+        border-radius: 10px;
+        background-color: $white;
+        appearance: none;
+        background-image: url(../img/triangle.svg);
+        background-repeat: no-repeat;
+        background-size: 17px 13px;
+        background-position: 90%;
+        outline: none;
+        cursor: pointer;
+        color: $light;
+        font-size: 20px;
+        font-family: $text-Ubuntu;
+    }
+    &-calendar {
+        padding: 19px 22px 18px 16px;
+        border: none;
+        border-radius: 10px;
+        background-color: $white;
+        background-image: url(../img/calendar.svg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 90%;
+        color: $light;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: $text-Ubuntu;
+        line-height: 23px;
+        &[type="date"]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+            cursor: pointer;
+        }
+        &[type="date"] {
+            padding: 18px 17px 17px 11px;
+        }
+    }
+    &-btn {
+        background-color: $peach;
+        color: $white;
+        min-width: 156px;
+        padding: 18px 18px 19px 24px;
+    }
+}
+.title {
+    flex-direction: column;
+    &-wrapper {
+        background-color: $brown;
+        background-image: url(../img/wrapper01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 790px;
+        width: 100%;
+        position: relative;
+        color: $white;
+    }
+    & h1 {
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 98px;
+        padding: 106px 0 0 42px;
+        margin: 0;
+    }
+    & span {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        padding: 0 19px 40px 0px;
+        width: 476px;
+        height: 28px;
+    }
+    &-button {
+        background-color: $peach;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+        padding: 24px 137px 24px 129px;
+    }
+}
+.aside {
+    flex-direction: column;
+    position: relative;
+    width: 1319px;
+    height: 289px;
+    background-color: $white;
+    border-radius: 10px;
+    left: 61px;
+    // right: -55px;
+    bottom: 161px;
+    &-text {
+        font-size: 45px;
+        font-weight: 500;
+        color: $brown;
+        line-height: 52px; 
+        margin: 0;
+    }
+    &-nav {
+        gap: 158px;
+        padding-top: 44px;
+        padding-right: 22px;
+        &-item {
+            flex-direction: column;
+            gap: 17px;
+            cursor: pointer;
+            & img {
+                width: 60px;
+                height: 60px;
+            }
+            & span {
+                color: $brown;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}
+.main {
+    flex-direction: column;
+    &-position {
+        position: relative;
+        bottom: 104px;
+    }
+    &-text {
+        padding-bottom: 52px;
+        &-bottom {
+            margin: 115px 5px 38px 0;
+        }
+    }
+    &-nav {
+        flex-wrap: wrap;
+        row-gap: 58px;
+        column-gap: 60px;
+        &-rooms {
+            width: 630px;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            justify-content: flex-end;
+            &-01 {
+                background-image: url(../img/twinRoom.png);
+            }
+            &-02{
+                background-image: url(../img/standardRoom.png);
+            }
+            &-03{
+                background-image: url(../img/viewRoom.png);
+            }
+            &-04{
+                background-image: url(../img/deluxRoom.png);
+            }
+        }
+    }
+    & span {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 46px;
+        color: $white;
+    }
+    &-text-standartroom {
+        padding-right: 5px;
+    }
+    &-text-deluxroom {
+        padding: 0 0 3px 21px;
+    }
+    &-button {
+        background-color: $peach;
+        color: $white;
+        padding: 24px 52px 24px 56px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        width: 136px;
+        height: auto;
+        margin: 18px 0 58px 0;
+        &-standartroom {
+            margin: 19px 5px 57px 0;
+        }
+        &-viewroom {
+            margin-top: 32px;
+        }
+        &-deluxroom {
+            margin: 31px 0 56px 37px;
+        }
+        &-end {
+            padding: 24px 135px 23px 147px;
+            margin: 0;
+        }
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-wrapper {
+        background-color: $dark;
+        height: 469px;
+        width: auto;
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+        height: 331px;
+        padding-left: 56px;
+        & img {
+            width: 154px;
+            height: 126px;
+            padding-bottom: 69px;
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 28px;
+            padding-left: 4px;
+            color: $white;
+            &-01 {
+                font-weight: 500;
+            }
+        }
+    }
+    &-centr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        padding: 0 17px 75px 0;
+        gap: 27px;
+        & span {
+            cursor: pointer;
+        }
+    }
+    &-right {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        align-items: flex-start;
+        color: $white;
+        padding: 0 71px 104px 0;
+        gap: 17px;
+        & span {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 34px;
+        }
+    }
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & input {
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        height: 75px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 28px;
+        color: $light;
+        padding-left: 27px;
+    }
+    & button {
+        width: 371px;
+        height: 75px;
+        border: none;
+        border-radius: 10px;
+        background-color: $peach;
+        color: $white;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        cursor: pointer;
+    }
+}
