@@ -391,4 +391,10 @@
     .email {
         align-items: center;
     }
+    .booking-calendar {
+        padding: 15px 0 15px 11px;
+    }
+    .booking-calendar[type="date"] {
+        padding: 14px 2px 14px 2px;
+    }
 }
