@@ -79,6 +79,9 @@
     .booking {
         gap: 8px;
     }
+    .booking-calendar {
+        padding: 19px 22px 18px 16px;
+    }
     .title h1 {
         font-size: 62px;
         padding-left: 0;
@@ -152,7 +155,7 @@
         padding: 15px 0 15px 11px;
     }
     .booking-calendar[type="date"] {
-        padding: 14px 0 14px 1px;
+        padding: 14px 0 14px 4px;
     }
     .booking-btn {
         padding: 15px 10px 15px 11px;
@@ -390,5 +393,27 @@
     }
     .email {
         align-items: center;
+    }
+
+    .booking-select {
+        font-size: 18px;
+        padding: 15px 43px 15px 11px;
+    }
+    .booking-calendar {
+        font-size: 18px;
+        padding: 15px 6px 15px 11px;
+    }
+    .booking-calendar[type="date"] {
+        line-height: normal;
+        font-size: 18px;
+        padding: 15px 5px 15px 6px;
+    }
+    .booking-btn {
+        font-size: 17px;
+        padding: 15px 10px 15px 11px;
+    }
+    .main-button-end {
+        font-size: 17px;
+        padding: 15px 10px 15px 11px;
     }
 }
